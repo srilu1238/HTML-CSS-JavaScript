@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Layout page">
+    <title>Layout Page</title>
+    <style type="text/css">
+      body{
+          width: 940px;
+          margin: 0 auto;
+          font: 10pt/1.5em "Georgia", Arial, sans-serif;
+        }
+       
+        header, section,aside, article, footer{
+            display:block;
+        }
+        header, footer{
+            padding: 0px;
+            text-align: center;
+        }
+        nav{
+            text-align: center;
+        }
+        nav ul{
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 0;
+        }
+        nav li{
+            display: inline-block;
+            margin: 0 0 0 50px;
+            width: 100px;
+        }
+        aside.aleft{
+            float: left;
+        }
+        aside.aright{
+            float: right;
+        }
+        section
+        {
+            float: left;
+            width: 500px;
+            padding-left: 20px;
+            border-left: 2px dotted #b2a497;
+            border-right: 2px dotted #b2a497;
+        }
+        footer{
+            clear: both!important;
+            width: 940px;
+            height: 100px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body >
+    <header>
+        <h1>Page Layout 1</h1>
+    </header>
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+         </ul>        
+    </nav>
+    <hr>
+    <aside class="aleft">
+        <figure>
+            <img src="dog.jpg" alt="dog image" height="100px" width="100px">
+            <div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </figure>
+    </aside>
+    <section>
+        <article>
+            <header> <h1><u>Article 1</u></h1> </header>
+            <div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam voluptas quidem aut ducimus nesciunt. Id alias beatae rem, nesciunt dicta sed magni quis reprehenderit nostrum molestiae accusantium, quod aliquid sint.</p>
+            </div>
+            <p>#End of Article 1</p>
+        </article>
+        <article>
+            <header> <h1><u>Article 2</u></h1> </header>
+            <div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam voluptas quidem aut ducimus nesciunt. Id alias beatae rem, nesciunt dicta sed magni quis reprehenderit nostrum molestiae accusantium, quod aliquid sint.</p>
+            </div>
+            <p>#End of Article 2</p>
+        </article>
+    </section>
+    <aside class="aright">
+    <figure>
+        <img src="dog.jpg" alt="dog image" height="100px" width="100px">
+        <div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </figure>
+</aside>
+    <footer>
+        <hr>
+        Copyright &copy; - <a href="PHPTraining.com">PHPTraining.com</a>
+    </footer>
+</body>
+</html> 
