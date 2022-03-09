@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+button{
+    color: blue;
+    background-color: darksalmon;
+    padding: 15px 32px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 40vh 90vh;
+}

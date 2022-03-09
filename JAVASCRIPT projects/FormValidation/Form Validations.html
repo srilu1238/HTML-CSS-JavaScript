@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Form Validations">
+    <title>Form Validations</title>
+    <script>
+        function checkFormData(){
+            // var message = "";
+             //Access the Text box content
+             var tname = document.getElementById('txt_name').value;
+             var temail = document.getElementById('txt_email').value;
+             var tage = document.getElementById('txt_age').value;
+ 
+             //Access the radio button values
+             var tgender1 = document.getElementById('radio1').checked;
+             var tgender2 = document.getElementById('radio2').checked;
+ 
+             //Access Checkbox
+             var tchkbox = document.getElementById('chkbox').checked;
+             var message="";
+             message += "Name: " + tname + "<br>";
+             message += "Email: " + temail + "<br>";
+             message += "Age: " + tage + "<br>";
+             message += "Male: " + tgender1 + "<br>";
+             message += "Female: " + tgender2 + "<br>";
+             message += "Agreed: " + tchkbox + "<br>";
+            // alert(message);
+            
+            document.getElementById('tmessage').innerHTML= message;
+   
+         }
+     </script>
+</head>
+<body>
+    <p id="tmessage"></p>
+ 
+    <h1>Form Validations</h1>
+    
+    <form action="https://phpbootcamp.com" method="get">
+        Name: <input type="text" name="tname" id="txt_name"/><br><br>
+        Email: <input type="text" name="temail" id="txt_email"/><br><br>
+        Age: <input type="text" name="tage" id="txt_age"><br><br>
+
+
+        Male <input type="radio" name="gender" id="radio1" checked>
+        Female <input type="radio" name="gender" id="radio2"><br><br>
+
+        <input type="checkbox" name="" id="chkbox"/> Agree to our Terms <br> <br>
+
+        <input type="button" name="submit" value="Submit" onclick="checkFormData();">
+    </form>
+    
+</body>
+</html>
